@@ -1,0 +1,13 @@
+Sample	Stage	Temperature	pCO2	BioRep
+HH1_Ga	gastrula	high	high	1
+HH2_Ga	gastrula	high	high	1
+HH3_Ga	gastrula	high	high	1
+HL1_Ga	gastrula	high	low	2
+HL2_Ga	gastrula	high	low	2
+HL3_Ga	gastrula	high	low	2
+LH1_Ga	gastrula	low	high	3
+LH2_Ga	gastrula	low	high	3
+LH3_Ga	gastrula	low	high	3
+LL1_Ga	gastrula	low	low	4
+LL2_Ga	gastrula	low	low	4
+LL3_Ga	gastrula	low	low	4

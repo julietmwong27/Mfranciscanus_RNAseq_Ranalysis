@@ -1,0 +1,13 @@
+Sample	Stage	Temperature	pCO2	BioRep
+HH1_Pr	prism	high	high	1
+HH2_Pr	prism	high	high	1
+HH3_Pr	prism	high	high	1
+HL1_Pr	prism	high	low	2
+HL2_Pr	prism	high	low	2
+HL3_Pr	prism	high	low	2
+LH1_Pr	prism	low	high	3
+LH2_Pr	prism	low	high	3
+LH3_Pr	prism	low	high	3
+LL1_Pr	prism	low	low	4
+LL2_Pr	prism	low	low	4
+LL3_Pr	prism	low	low	4
