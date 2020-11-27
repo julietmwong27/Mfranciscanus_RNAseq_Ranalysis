@@ -470,9 +470,10 @@ names(keyvals_gatemp) [keyvals_gatemp=='dodgerblue2'] <- 'Down + logFC < -1'
 names(keyvals_gatemp) [keyvals_gatemp=='lightblue3'] <- 'Down'
 
 # Plot volcano with labels
-temp_ga_volcano <- EnhancedVolcano(ga.temp.highvslow_all, lab = rownames(ga.temp.highvslow_all), x = 'logFC', y = 'adj.P.Val', 
+temp_ga_volcano <- EnhancedVolcano(ga.temp.highvslow_all, lab = rownames(ga.temp.highvslow_all), x = 'logFC', y = 'adj.P.Val',
+                                   selectLab = c('Velvet.k45.Locus_36919_Transcript_2/4_Confidence_0.667_Length_3284','Velvet.k45.Locus_3846_Transcript_60/68_Confidence_0.076_Length_1001','TransAb.k75.S56879'),
                                     colCustom = keyvals_gatemp,pCutoff = 0.05, colAlpha = 0.8,
-                                    labSize = 2.0, gridlines.major = FALSE, gridlines.minor = FALSE)
+                                   axisLabSize = 10, legendIconSize = 1, legendLabSize = 10, labSize = 2.0, gridlines.major = FALSE, gridlines.minor = FALSE)
 temp_ga_volcano <- temp_ga_volcano + ggplot2::coord_cartesian(xlim=c(-5,5),ylim=c(0,8))
 temp_ga_volcano
 
@@ -537,9 +538,10 @@ names(keyvals_gapCO2) [keyvals_gapCO2=='dodgerblue2'] <- 'Down + logFC < -1'
 names(keyvals_gapCO2) [keyvals_gapCO2=='lightblue3'] <- 'Down'
 
 # Plot volcano with labels
-pCO2_ga_volcano <- EnhancedVolcano(ga.pCO2.highvslow_all, lab = rownames(ga.pCO2.highvslow_all), x = 'logFC', y = 'adj.P.Val', 
+pCO2_ga_volcano <- EnhancedVolcano(ga.pCO2.highvslow_all, lab = rownames(ga.pCO2.highvslow_all), x = 'logFC', y = 'adj.P.Val',
+                                   selectLab = c('Velvet.k55.Locus_60231_Transcript_2/3_Confidence_0.818_Length_471','TransAb.k45.R720037'),
                                    colCustom = keyvals_gapCO2,pCutoff = 0.05, colAlpha = 0.8,
-                                   labSize = 2.0, gridlines.major = FALSE, gridlines.minor = FALSE)
+                                   axisLabSize = 10, legendIconSize = 1, legendLabSize = 10, labSize = 2.0, gridlines.major = FALSE, gridlines.minor = FALSE)
 pCO2_ga_volcano <- pCO2_ga_volcano + ggplot2::coord_cartesian(xlim=c(-5,5),ylim=c(0,8))
 pCO2_ga_volcano
 
@@ -734,7 +736,8 @@ names(keyvals_prtemp) [keyvals_prtemp=='lightblue3'] <- 'Down'
 # Plot volcano with labels
 temp_pr_volcano <- EnhancedVolcano(pr.temp.highvslow_all, lab = rownames(pr.temp.highvslow_all), x = 'logFC', y = 'adj.P.Val', 
                                    colCustom = keyvals_prtemp,pCutoff = 0.05, colAlpha = 0.8,
-                                   labSize = 2.0, gridlines.major = FALSE, gridlines.minor = FALSE)
+                                   selectLab = c('SOAP.k85.C859151','Velvet.k55.Locus_126484_Transcript_4/4_Confidence_0.615_Length_880','Velvet.k45.Locus_1940_Transcript_111/113_Confidence_0.157_Length_5286','SOAP.k45.scaffold74295'),
+                                   axisLabSize = 10, legendIconSize = 1, legendLabSize = 10, labSize = 2.0, gridlines.major = FALSE, gridlines.minor = FALSE)
 temp_pr_volcano <- temp_pr_volcano + ggplot2::coord_cartesian(xlim=c(-5,5),ylim=c(0,8))
 temp_pr_volcano
 
@@ -800,8 +803,9 @@ names(keyvals_prpCO2) [keyvals_prpCO2=='lightblue3'] <- 'Down'
 
 # Plot volcano with labels
 pCO2_pr_volcano <- EnhancedVolcano(pr.pCO2.highvslow_all, lab = rownames(pr.pCO2.highvslow_all), x = 'logFC', y = 'adj.P.Val', 
+                                   selectLab = c('TRINITY_DN64304_c1_g1_i10','SOAP.k55.scaffold138272'),
                                    colCustom = keyvals_prpCO2,pCutoff = 0.05, colAlpha = 0.8, borderWidth = 0.5,
-                                   labSize = 2.0, gridlines.major = FALSE, gridlines.minor = FALSE)
+                                   axisLabSize = 10, legendIconSize = 1, legendLabSize = 10, labSize = 2.0, gridlines.major = FALSE, gridlines.minor = FALSE)
 pCO2_pr_volcano <- pCO2_pr_volcano + ggplot2::coord_cartesian(xlim=c(-5,5),ylim=c(0,8))
 pCO2_pr_volcano
 
